@@ -14,6 +14,10 @@ C4-PlantUML includes macros, stereotypes, and other goodies (like VSCode Snippet
 * [Background](#background)
 * [License](#license)
 
+## Preparations
+Set up an environment variable, `C4PLANTUML`, that contains an absolute path to the directory containing `C4_*.puml` files.
+
+
 ## Getting Started
 
 At the top of your C4 PlantUML `.puml` file, you need to include the `C4_Context.puml`, `C4_Container.puml` or `C4_Component.puml` file found in the `root` of this repo.

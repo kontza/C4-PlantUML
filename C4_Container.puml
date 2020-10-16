@@ -1,6 +1,6 @@
-!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Context.puml
+' !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Context.puml
 ' uncomment the following line and comment the first to use locally
-' !include C4_Context.puml
+!include %getenv("C4PLANTUML")/C4_Context.puml
 
 ' Scope: A single software system.
 ' Primary elements: Containers within the software system in scope.
@@ -35,12 +35,10 @@ skinparam database<<container>> {
 !definelong LAYOUT_WITH_LEGEND
 hide stereotype
 legend right
-|=              |= Type |
-|<PERSON_BG_COLOR>      | person |
-|<EXTERNAL_PERSON_BG_COLOR>      | external person |
-|<SYSTEM_BG_COLOR>   | system |
-|<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
-|<CONTAINER_BG_COLOR>   | container |
+|= Internal |= External |= Type |
+|<PERSON_BG_COLOR>   |<EXTERNAL_PERSON_BG_COLOR>| person    |
+|<SYSTEM_BG_COLOR>   |<EXTERNAL_SYSTEM_BG_COLOR>| system    |
+|<CONTAINER_BG_COLOR>| n/a | container |
 endlegend
 !enddefinelong
 

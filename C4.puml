@@ -1,5 +1,6 @@
 ' C4-PlantUML, version 1.0.0
 ' https://github.com/RicardoNiepel/C4-PlantUML
+!include %getenv("C4PLANTUML")/Customizations.puml
 
 ' Colors
 ' ##################################

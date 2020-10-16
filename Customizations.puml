@@ -1,0 +1,12 @@
+' An invisible cloud element is used as a helper for grouping and layout.
+skinparam cloud {
+    Shadowing false
+    borderColor Transparent
+    backgroundColor Transparent
+    fontColor Transparent
+    stereotypeFontColor Transparent
+}
+
+!define Layout_Group(group_alias) cloud " " as group_alias
+
+' Add other customizations here.

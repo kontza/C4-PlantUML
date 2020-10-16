@@ -1,6 +1,6 @@
-!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+' !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
 ' uncomment the following line and comment the first to use locally
-' !include C4_Container.puml
+!include %getenv("C4PLANTUML")/C4_Container.puml
 
 ' Scope: A single container.
 ' Primary elements: Components within the container in scope.
@@ -35,13 +35,11 @@ skinparam database<<component>> {
 !definelong LAYOUT_WITH_LEGEND
 hide stereotype
 legend right
-|=              |= Type |
-|<PERSON_BG_COLOR>      | person |
-|<EXTERNAL_PERSON_BG_COLOR>      | external person |
-|<SYSTEM_BG_COLOR>   | system |
-|<EXTERNAL_SYSTEM_BG_COLOR>      | external system |
-|<CONTAINER_BG_COLOR>   | container |
-|<COMPONENT_BG_COLOR>   | component |
+|= Internal |= External |= Type |
+|<PERSON_BG_COLOR>   |<EXTERNAL_PERSON_BG_COLOR>| person    |
+|<SYSTEM_BG_COLOR>   |<EXTERNAL_SYSTEM_BG_COLOR>| system    |
+|<CONTAINER_BG_COLOR>| n/a | container |
+|<COMPONENT_BG_COLOR>| n/a | component |
 endlegend
 !enddefinelong
 
